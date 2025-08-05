@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: climatewise-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GROQ_API_KEY
+        value: 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
+      - key: FRONTEND_URL
+        value: https://climatewise.vercel.app
